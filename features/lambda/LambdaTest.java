@@ -52,10 +52,10 @@ public class LambdaTest {
     public void test3() {
         int[] arr = {1, 2, 3, 4};//类型推断
         HashMap<String, Integer> map = new HashMap<>();
-        map.put("a",97);
-        map.put("b",98);
-        map.put("c",99);
-        map.put("d",100);
+        map.put("a", 97);
+        map.put("b", 98);
+        map.put("c", 99);
+        map.put("d", 100);
         var entrySet = map.entrySet();
         map.forEach(System.out::printf);
     }
@@ -75,6 +75,6 @@ public class LambdaTest {
         //方法引用：Function<Integer, String> func = Integer::toHexString;
         Function<Integer, String> func = input -> Integer.toHexString(input);
         String hex = func.apply(256);
-        System.out.printf("0x%s", hex);
+        System.out.printf("0x%s\n", hex);
     }
 }
